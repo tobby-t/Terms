@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 :root {
   --copy2gray: rgba(0, 0, 0, 0.39);
@@ -10,6 +12,7 @@
   --darkgray: rgba(45, 45, 45, 1);
   --white: rgba(255, 255, 255, 1);
   --text: rgba(84, 84, 84, 1);
+  --line: rgba(84, 84, 84, 0.2);
 }
 .trpt {
   display: none;
@@ -24,8 +27,13 @@
 .trpt a:hover {
   text-decoration: underline;
 }
+.corner{
+  border-right: 1px solid var(--line);
+  padding-right: 5%;
+  text-align: right;
+}
 .corner li {
-  margin-bottom: 5%;
+  margin-bottom: 12%;
 }
 .corner a {
   text-decoration: none;
@@ -33,6 +41,9 @@
 }
 .corner a:hover {
   text-decoration: underline;
+}
+.terms{
+  padding-left: 6%;
 }
 .terms h2,
 .terms p,
@@ -43,14 +54,15 @@
 .hr {
   height: 1px;
   border-width: 0;
-  color: gray;
-  background-color: gray;
+  color: var(--line);
+  background-color: var(--line);
   margin: auto;
+  margin-top: 5%;
   margin-left: 8%;
-  width: 85%;
+  width: 80%;
 }
 .copyright {
-  color: var(--text);
+  color: rgba(137, 137, 137, 1);
   text-align: center;
 }
 .container svg {
@@ -69,7 +81,6 @@
 .resources h4 {
   text-decoration: underline;
 }
-
 .footer a {
   text-decoration: none;
   color: var(--black);
